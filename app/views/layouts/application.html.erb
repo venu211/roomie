@@ -6,6 +6,9 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <div id="user_nav">
+  <%= link_to "Sign in with Twitter", "/auth/twitter"%>
+</div>
   </head>
 
   <body>
