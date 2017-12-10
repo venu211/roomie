@@ -7,6 +7,9 @@ end
 
 
 gem 'omniauth-twitter'
+gem 'omniauth-google-oauth2', '~> 0.5.2'
+gem 'omniauth-facebook', '~> 4.0'
+
 gem 'mysql2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
