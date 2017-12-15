@@ -11,6 +11,7 @@ gem 'omniauth-google-oauth2', '~> 0.5.2'
 gem 'omniauth-facebook', '~> 4.0'
 
 gem 'mysql2'
+gem 'capistrano', '~> 3.10', '>= 3.10.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.5'
