@@ -35,7 +35,7 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets"#, "public/sys
 namespace :deploy do
  desc 'Restart application'
  task :restart do
- invoke ‘unicorn:restart’
+ invoke 'unicorn:restart'
  end
 end
 after 'deploy:publishing', 'deploy:restart'
