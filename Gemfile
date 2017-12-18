@@ -11,13 +11,21 @@ gem 'omniauth-google-oauth2', '~> 0.5.2'
 gem 'omniauth-facebook', '~> 4.0'
 
 gem 'mysql2'
-gem 'capistrano', '~> 3.10', '>= 3.10.1'
 
+group :development do
+  gem 'capistrano', '~> 3.6'
+  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano-rbenv', '~> 2.1'
+  gem 'capistrano-bundler'
+  gem 'capistrano3-unicorn'
+  gem 'puma', '~> 3.0'
+end
+
+gem 'unicorn'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.5'
 
-# Use Puma as the app server
-gem 'puma', '~> 3.0'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
