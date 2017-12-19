@@ -32,13 +32,13 @@ append :linked_files, "config/database.yml", "config/secrets.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets"#, "public/system"
 
 
-namespace :deploy do
- desc 'Restart application'
- task :restart do
- invoke 'unicorn:restart'
- end
-end
-after 'deploy:publishing', 'deploy:restart'
+# namespace :deploy do
+#  desc 'Restart application'
+#  task :restart do
+#  invoke 'unicorn:restart'
+#  end
+# end
+# after 'deploy:publishing', 'deploy:restart'
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 

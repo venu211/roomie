@@ -15,7 +15,7 @@ gem 'mysql2'
 group :development do
   gem 'capistrano', '~> 3.6'
   gem 'capistrano-rails', '~> 1.1'
-  gem 'capistrano-rbenv', '~> 2.1'
+  gem 'capistrano-rbenv', '~> 2.1'  
   gem 'capistrano-bundler'
   gem 'capistrano3-unicorn'
   gem 'puma', '~> 3.0'
