@@ -1,3 +1,6 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-<h2>Your Details from Twitter<br><%= current_user.inspect %></h2>
+<h1>Welcome to Roomie App Fellas</h1><br>
+
+<h3> Web pages are coming soon but authentication work is done You can trying logging in by any of the following</h3>
+    <%= link_to "Sign in with Twitter", "/auth/twitter"%> <br>
+    <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %> <br>
+    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>

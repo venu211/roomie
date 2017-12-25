@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   match 'signout',                 to: 'sessions#destroy', :via => [:get]
 
   resources :sessions, only: [:create, :destroy]
-  resource :home, only: [:show]
+  get 'account', to: 'home#account'
+  #resources :home, only: [:account]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
