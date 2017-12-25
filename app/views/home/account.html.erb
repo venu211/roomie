@@ -1,0 +1,9 @@
+<h1 align="center">Welcome to Roomie App <%= current_user.name %></h1><br>
+<img src=<%= current_user.image.to_s %> alt="profile pic" style="width:250px;height:250px;margin: auto;">
+<br>
+<h2 align="center">Your Details from <%= current_user.provider %></h2><br>
+<ul align="center">
+  <li>Name: <%= current_user.name %></li>
+  <li>Email: <%= current_user.email %></li>
+  <li>Location: <%= (current_user.location != (nil && "")) ? current_user.location : "You don't have it on your #{current_user.provider} account"  %></li>
+</ul>
