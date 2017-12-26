@@ -1,4 +1,4 @@
-set :development, :develop
+
 set :unicorn_rack_env, "development"
 set :rails_env, 'development'
 set :migration_role, 'db'

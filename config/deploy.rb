@@ -3,7 +3,7 @@ lock "~> 3.10.1"
 
 set :application, "roomie"
 set :repo_url, "git@github.com:venu211/roomie.git"
-set :branch, 'capistrano-setup'
+set :branch, 'master'
 
 #set :use_sudo, true
 # Default branch is :master
