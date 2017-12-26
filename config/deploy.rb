@@ -26,7 +26,7 @@ set :pty, true
 #ssh_options[:forward_agent] = true
 
 # Default value for :linked_files is []
-append :linked_files, "config/database.yml", "config/secrets.yml"
+append :linked_files, "config/database.yml", "config/secrets.yml", "config/unicorn_init.sh"
 
 # Default value for linked_dirs is []
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets"#, "public/system"
