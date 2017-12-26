@@ -1,5 +1,22 @@
 # server-based syntax
 # ======================
+
+set :unicorn_rack_env, "production"
+set :rails_env, 'production'
+set :migration_role, 'db'
+# server-based syntax
+# ======================
+# Defines a single server with a list of roles and multiple properties.
+# You can define all roles on a single server, or split them:
+ 
+# server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
+# server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
+server 'ec2-34-228-6-245.compute-1.amazonaws.com', user: 'deployer', roles: %w{app web db}, 
+ssh_options: {
+     user: "deployer", # overrides user setting above
+     keys: %w(~/.ssh/roomie_deployer),
+     forward_agent: true
+ }
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
