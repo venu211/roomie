@@ -1,4 +1,4 @@
-root = "/Users/venumadhavdondapati/workspace/roomie"#{}"/home/deployer/roomie/current"
+root = "/home/deployer/roomie/current"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
